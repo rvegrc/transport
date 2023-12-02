@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/561983801803574914/ae5bab2da3864bbc91c1990a0a071575/artifacts
+end_time: 1700973983029
+entry_point_name: ''
+experiment_id: '561983801803574914'
+lifecycle_stage: active
+run_id: ae5bab2da3864bbc91c1990a0a071575
+run_name: grandiose-frog-456
+run_uuid: ae5bab2da3864bbc91c1990a0a071575
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700973980848
+status: 3
+tags: []
+user_id: pmu

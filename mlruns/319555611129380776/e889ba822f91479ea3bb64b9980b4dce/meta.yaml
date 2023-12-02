@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/319555611129380776/e889ba822f91479ea3bb64b9980b4dce/artifacts
+end_time: 1700402157905
+entry_point_name: ''
+experiment_id: '319555611129380776'
+lifecycle_stage: active
+run_id: e889ba822f91479ea3bb64b9980b4dce
+run_name: resilient-pug-29
+run_uuid: e889ba822f91479ea3bb64b9980b4dce
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700402156496
+status: 3
+tags: []
+user_id: pmu

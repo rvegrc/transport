@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/319555611129380776/c889d1a1fd2a42579f760dcf4d456c00/artifacts
+end_time: 1700401913306
+entry_point_name: ''
+experiment_id: '319555611129380776'
+lifecycle_stage: active
+run_id: c889d1a1fd2a42579f760dcf4d456c00
+run_name: brawny-seal-579
+run_uuid: c889d1a1fd2a42579f760dcf4d456c00
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700401911225
+status: 3
+tags: []
+user_id: pmu

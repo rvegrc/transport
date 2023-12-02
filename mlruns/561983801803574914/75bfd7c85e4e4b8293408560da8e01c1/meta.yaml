@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/561983801803574914/75bfd7c85e4e4b8293408560da8e01c1/artifacts
+end_time: 1701319119853
+entry_point_name: ''
+experiment_id: '561983801803574914'
+lifecycle_stage: active
+run_id: 75bfd7c85e4e4b8293408560da8e01c1
+run_name: xgbr_price_2000_estimate_max_lives
+run_uuid: 75bfd7c85e4e4b8293408560da8e01c1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701319118162
+status: 3
+tags: []
+user_id: pmu

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/856834043536050672/6beb7e5e8d674ba3af6432d097c5794c/artifacts
+end_time: 1700314981036
+entry_point_name: ''
+experiment_id: '856834043536050672'
+lifecycle_stage: active
+run_id: 6beb7e5e8d674ba3af6432d097c5794c
+run_name: sassy-worm-641
+run_uuid: 6beb7e5e8d674ba3af6432d097c5794c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700314958559
+status: 3
+tags: []
+user_id: pmu

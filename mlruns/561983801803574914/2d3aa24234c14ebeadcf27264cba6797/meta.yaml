@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/561983801803574914/2d3aa24234c14ebeadcf27264cba6797/artifacts
+end_time: 1701318462996
+entry_point_name: ''
+experiment_id: '561983801803574914'
+lifecycle_stage: active
+run_id: 2d3aa24234c14ebeadcf27264cba6797
+run_name: xgbr_price_2000_estimate
+run_uuid: 2d3aa24234c14ebeadcf27264cba6797
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1701318462210
+status: 4
+tags: []
+user_id: pmu

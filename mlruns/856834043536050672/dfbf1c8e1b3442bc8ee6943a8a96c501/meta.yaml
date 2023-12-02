@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/856834043536050672/dfbf1c8e1b3442bc8ee6943a8a96c501/artifacts
+end_time: 1700320259760
+entry_point_name: ''
+experiment_id: '856834043536050672'
+lifecycle_stage: active
+run_id: dfbf1c8e1b3442bc8ee6943a8a96c501
+run_name: intrigued-boar-976
+run_uuid: dfbf1c8e1b3442bc8ee6943a8a96c501
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700320255297
+status: 3
+tags: []
+user_id: pmu

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/656709439867656287/6d922eb999e74a1989301f8c9d007d49/artifacts
+end_time: 1700969919662
+entry_point_name: ''
+experiment_id: '656709439867656287'
+lifecycle_stage: active
+run_id: 6d922eb999e74a1989301f8c9d007d49
+run_name: welcoming-shoat-905
+run_uuid: 6d922eb999e74a1989301f8c9d007d49
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1700969917267
+status: 3
+tags: []
+user_id: pmu

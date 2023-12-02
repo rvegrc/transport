@@ -11,3 +11,7 @@ async def root():
 @app.get("/test")
 async def test():
     return {"Hello": "Api Fast"}
+
+@app.get("/train/{item}")
+async def train(item):
+    return {"Train": item}

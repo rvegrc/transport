@@ -1,0 +1,12 @@
+conda install -c anaconda jupyter
+conda install -c anaconda pandas
+conda install -c anaconda numpy
+conda install -c conda-forge matplotlib
+conda install -c anaconda seaborn
+conda install -c conda-forge xgboost
+conda install -c conda-forge optuna
+conda install -c conda-forge mlflow
+conda install -c anaconda scikit-learn
+conda install -c conda-forge fastapi
+conda install -c conda-forge uvicorn
+conda install -c conda-forge pydantic

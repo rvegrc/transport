@@ -46,6 +46,7 @@ model = joblib.load('model_test.joblib')
 
 
 class DfRow(BaseModel):
+    
     distance: int
     own_container: int
     complect_send: int
@@ -55,6 +56,26 @@ class DfRow(BaseModel):
 
 class DataF(BaseModel):
     data: List[DfRow]
+
+
+class DfOut(BaseModel):
+    '''df output format'''
+    distance: int
+    own_container: int
+    complect_send: int
+    container_train: int
+    transportation_type: int
+    days: int
+
+
+class TextOut(BaseModel):
+    '''format text out'''
+    test: str
+
+
+class SerialOut(BaseModel):
+    '''serias out'''
+    data: int
 
 
 app = FastAPI()
@@ -73,6 +94,21 @@ async def predict(data:DataF):
     # print(pd.read_json({data_dict['data'], orient='records'))
         # predictions = model.predict(data)
     return  {'yes': 'yes'} # predictions # recive dataset, make prediction, return prediction,
+
+
+@app.post('/text')
+async def train(test:TextOut):
+    '''output text'''
+    # print(test)
+    print(test)
+    return {'text': test}
+
+
+@app.post('/serial')
+async def serial(data:SerialOut):
+    'output second item of serias'
+    return data[1]
+
 
 @app.get("/test")
 async def test():

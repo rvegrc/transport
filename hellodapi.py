@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi import UploadFile, File
 
 from pydantic import BaseModel
 
@@ -68,6 +69,18 @@ class DfOut(BaseModel):
     days: int
 
 
+class XtestOut(BaseModel):
+    '''xtest output format'''
+    distance: int
+    own_container: int
+    complect_send: int
+    container_train: int
+    transportation_type: int
+    days: int
+
+
+
+
 class TextOut(BaseModel):
     '''format text out'''
     test: str
@@ -104,10 +117,17 @@ async def train(test:TextOut):
     return {'text': test}
 
 
-@app.post('/serial')
-async def serial(data:SerialOut):
+@app.post('/xout')
+async def serial(data:XtestOut):
     'output second item of serias'
-    return data[1]
+    print(data)
+    return data
+
+
+# @app.post('/serial')
+# async def serial(data:SerialOut):
+#     'output second item of serias'
+#     return data[1]
 
 
 @app.get("/test")

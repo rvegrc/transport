@@ -37,7 +37,8 @@ sklearn.set_config(transform_output='pandas')
 # load metrics
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
-from typing import List
+
+from typing import List, Dict, Any
 import typing
 
 pd.set_option('display.float_format', '{:.3f}'.format)
@@ -98,6 +99,16 @@ class SerialOut(BaseModel):
 
 class XtestDout(BaseModel):
     '''xtest out from dict form to_dict'''
+    distance: Dict[int, Any]
+    own_container: Dict[int, Any]
+    complect_send: Dict[int, Any]
+    container_train: Dict[int, Any]
+    transportation_type: Dict[int, Any]
+    days: Dict[int, Any]
+
+
+class XtestRout(BaseModel):
+    '''xtest records out from to_dict'''
     distance: dict
     own_container: dict
     complect_send: dict
@@ -134,9 +145,10 @@ async def serial(data:XtestOut):
 
 @app.post('/xout_dict')
 async def xout_dict(data:XtestDout):
-    print(data.json())
+    print(pd.DataFrame.from_dict(json.loads(data.json())))
+    # print(data.dict)
     # print(pd.DataFrame(json.load(data.json())))
-    return data
+    return (data)
 
 
 
@@ -150,7 +162,7 @@ async def predict(data:XtestOut):
     # df_data = pd.DataFrame(json.loads(data.json()))
     # print(df_data)
     # return  json.dumps(predict_x_test_out.tolist()) # predictions # recive dataset, make prediction, return prediction,
-    return  predict_x_test_out.tolist()
+    return  pd.DataFrame(predict_x_test_out).to_dict()
 
 
 

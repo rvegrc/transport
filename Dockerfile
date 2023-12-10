@@ -2,6 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
+COPY best_model.joblib .
 
 COPY hellodapi.py .
 

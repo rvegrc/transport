@@ -1,8 +1,9 @@
 artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/555592421686817878/142913bbe3d448c1be2693d8adc3ad9f/artifacts
+deleted_time: 1702193744360
 end_time: 1702186141461
 entry_point_name: ''
 experiment_id: '555592421686817878'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 142913bbe3d448c1be2693d8adc3ad9f
 run_name: best_model
 run_uuid: 142913bbe3d448c1be2693d8adc3ad9f

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pmu/zet/obs-h/Skills/Data%20Science/Data%20Scientist%20Full-Stack/exercises/practice/mlruns/555592421686817878/90c5704b61d54aee903cde0fcde573c4/artifacts
+end_time: 1702186151248
+entry_point_name: ''
+experiment_id: '555592421686817878'
+lifecycle_stage: active
+run_id: 90c5704b61d54aee903cde0fcde573c4
+run_name: best_model
+run_uuid: 90c5704b61d54aee903cde0fcde573c4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1702186148404
+status: 3
+tags: []
+user_id: pmu

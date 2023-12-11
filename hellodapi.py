@@ -162,7 +162,7 @@ async def predict(data:XtestOut):
     # df_data = pd.DataFrame(json.loads(data.json()))
     # print(df_data)
     # return  json.dumps(predict_x_test_out.tolist()) # predictions # recive dataset, make prediction, return prediction,
-    return  pd.DataFrame(predict_x_test_out).to_dict()
+    return  pd.DataFrame(predict_x_test_out.tolist())
 
 
 

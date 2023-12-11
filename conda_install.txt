@@ -10,3 +10,4 @@ conda install -c anaconda scikit-learn
 conda install -c conda-forge fastapi
 conda install -c conda-forge uvicorn
 conda install -c conda-forge pydantic
+conda install -c conda-forge findspark

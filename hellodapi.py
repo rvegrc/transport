@@ -97,8 +97,8 @@ class SerialOut(BaseModel):
     data: int
 
 
-class XtestDout(BaseModel):
-    '''xtest out from dict form to_dict'''
+class XInputDict(BaseModel):
+    '''X input from to_dict orient dict'''
     distance: Dict[int, Any]
     own_container: Dict[int, Any]
     complect_send: Dict[int, Any]
@@ -107,14 +107,14 @@ class XtestDout(BaseModel):
     days: Dict[int, Any]
 
 
-class XtestRout(BaseModel):
-    '''xtest records out from to_dict'''
-    distance: dict
-    own_container: dict
-    complect_send: dict
-    container_train: dict
-    transportation_type: dict
-    days: dict
+class XInpitList(BaseModel):
+    '''X input from to_dict orient list'''
+    distance: list
+    own_container: list
+    complect_send: list
+    container_train: list
+    transportation_type: list
+    days: list
 
 
 
@@ -143,26 +143,32 @@ async def serial(data:XtestOut):
     # print(model.predict(pd.DataFrame(data)))
     return data
 
-@app.post('/xout_dict')
-async def xout_dict(data:XtestDout):
-    print(pd.DataFrame.from_dict(json.loads(data.json())))
-    # print(data.dict)
-    # print(pd.DataFrame(json.load(data.json())))
-    return (data)
+# @app.post('/xout_dict')
+# async def xout_dict(data:XtestDout):
+#     print(pd.DataFrame.from_dict(json.loads(data.json())))
+#     # print(data.dict)
+#     # print(pd.DataFrame(json.load(data.json())))
+#     return (data)
 
 
-
-
-@app.post("/predict")
-async def predict(data:XtestOut):
-    X_test_out = pd.DataFrame(json.loads(data.json()))
-    predict_x_test_out = model.predict(X_test_out)
+def out(X_input):
+    predict_x = model.predict(X_input)
     # print(json.dumps(predict_x_test_out.tolist()))
-    print(pd.Series(predict_x_test_out))
+    print(X_input.index)
+    # print(pd.Series(predict_x_test_out))
     # df_data = pd.DataFrame(json.loads(data.json()))
     # print(df_data)
     # return  json.dumps(predict_x_test_out.tolist()) # predictions # recive dataset, make prediction, return prediction,
-    return  pd.DataFrame(predict_x_test_out.tolist())
+    return  pd.DataFrame(predict_x.tolist(), columns=['y_pred'], index=X_input.index)
+
+    
+
+@app.post("/dict_predict") # may be def for each endpoints
+async def predict(data:XInputDict):
+    X_input = pd.DataFrame(json.loads(data.json()))
+    return out(X_input)
+    
+    
 
 
 

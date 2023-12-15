@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY best_model.joblib .
 
-COPY hellodapi.py .
+COPY helloapi.py .
 
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT [ "uvicorn", "hellodapi:app", "--host", "0.0.0.0", "--port", "6000"]
+ENTRYPOINT [ "uvicorn", "helloapi:app", "--host", "0.0.0.0", "--port", "6000"]

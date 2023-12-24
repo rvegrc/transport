@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  nginx: 
+    image: nginx:latest
+    ports: 
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - fastapi
+  fastapi: 
+    build: .
+    expose: 
+      - "6000"

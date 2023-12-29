@@ -5,7 +5,7 @@ import requests
 
 
 
-st.title('Uber pickups in NYC') # +session state 
+st.title('Transport price') # +session state 
 
 file_upload = st.file_uploader(label = 'Upload_csv')
 process_file = st.button(label="Process_file")

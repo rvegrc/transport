@@ -73,15 +73,14 @@ class XInputIndex(BaseModel):
 
 class XInputList(BaseModel):
     '''X input from to_dict orient list'''
+    index: List
     distance: List
     own_container: List
     complect_send: List
     container_train: List
     transportation_type: List
     days: List
-
-
-
+   
 
 
 
@@ -102,7 +101,8 @@ def out(X_input):
     # df_data = pd.DataFrame(json.loads(data.json()))
     # print(df_data)
     # return  json.dumps(predict_x_test_out.tolist()) # predictions # recive dataset, make prediction, return prediction,
-    return  pd.DataFrame(predict_x.tolist(), columns=['y_pred'], index=X_input.index)
+    # return  pd.DataFrame(predict_x.tolist(), columns=['y_pred'], index=X_input.index)
+    return  pd.DataFrame(predict_x.tolist(), columns=['y_pred'], index=X_input.index).to_dict()
 
     
 
@@ -116,6 +116,9 @@ async def predict(data:XInputDict):
 async def predict(data:XInputList):
     X_input = pd.DataFrame(json.loads(data.json()))
     print(X_input)
+    # predict_x = model.predict(X_input)
+    # return  pd.DataFrame(predict_x.tolist(), columns=['y_pred'], index=X_input.index)
+    print(out(X_input))
     return out(X_input)
 
 @app.post("/index_predict")  

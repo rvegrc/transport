@@ -5,7 +5,7 @@ import requests
 
 
 
-st.title('Transport price predict') # +session state 
+st.title('Transport price predict 2') # +session state 
 
 file_upload = st.file_uploader(label = 'Upload_csv')
 process_file = st.button(label="Process_file")
